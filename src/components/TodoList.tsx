@@ -137,6 +137,7 @@ const TodoList = () => {
         setInputValue(todo.description);
         setSelectedTodoId(id);
         setEditInputActive(true);
+        editInputRef.current?.focus();
       }
     }
   };
