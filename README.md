@@ -1,4 +1,4 @@
-# portfolio-current
+# todo-app
 
 This is my personal portfolio. Built with [`React`](https://react.dev), [`TypeScript`](https://www.typescriptlang.org), [`Redux`](https://react-redux.js.org), [`HTML`](https://developer.mozilla.org/en-US/docs/Web/HTML), [`Sass`](https://sass-lang.com) and [`Vite`](https://vitejs.dev).
 
