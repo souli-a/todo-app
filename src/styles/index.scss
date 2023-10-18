@@ -1,0 +1,75 @@
+@import 'fonts';
+
+* {
+  margin: 0;
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+}
+
+body,
+#root {
+  display: flex;
+  flex: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overused Grotesk';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+
+button,
+input,
+li,
+ul {
+  all: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}

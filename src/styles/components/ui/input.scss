@@ -1,0 +1,50 @@
+@import '../../globals';
+
+.input {
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  transition: $transition;
+  width: 100%;
+  height: 7rem;
+}
+
+.input-add-edit-todo-light {
+  border-color: $white-3;
+  border-width: 0.2rem 0 0.2rem 0.2rem;
+  border-radius: 1rem 0 0 1rem;
+
+  &:focus {
+    border-color: $white-6;
+    border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+    + .button-add-edit-todo-light {
+      border-left: transparent;
+    }
+  }
+}
+
+.input-add-edit-todo-dark {
+  border-color: $white-4;
+  border-width: 0.2rem 0 0.2rem 0.2rem;
+  border-radius: 1rem 0 0 1rem;
+
+  &:focus {
+    border-color: $white-1;
+    border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+    + .button-add-edit-todo-dark {
+      border-left: transparent;
+    }
+  }
+}
+
+.input::placeholder {
+  user-select: none;
+  opacity: 0.5;
+}

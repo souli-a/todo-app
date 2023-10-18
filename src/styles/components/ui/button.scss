@@ -1,0 +1,173 @@
+@import '../../globals';
+
+.button {
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: $transition;
+  user-select: none;
+  text-align: center;
+}
+
+.button-basic-light {
+  border: solid 0.2rem $white-3;
+
+  &:hover {
+    background-color: $white-2;
+  }
+
+  &:focus {
+    background-color: $white-3;
+    border: solid 0.2rem $white-4;
+  }
+}
+
+.button-add-edit-todo-light {
+  border-style: solid;
+  border-color: $white-3;
+  border-width: 0.2rem;
+  border-radius: 0 1rem 1rem 0;
+
+  &:hover {
+    background-color: $white-2;
+  }
+
+  &:focus {
+    background-color: $white-3;
+    border-color: $white-5;
+  }
+}
+
+.button-delete-todo-light {
+  padding: 0;
+
+  &:hover {
+    svg path {
+      fill: $black-2;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $black-0;
+    }
+  }
+}
+
+.button-start-edit-todo-light {
+  padding: 0;
+
+  &:hover {
+    svg path {
+      fill: $black-2;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $black-0;
+    }
+  }
+}
+
+.button-basic-dark {
+  border: solid 0.2rem $white-4;
+
+  &:hover {
+    background-color: $black-4;
+  }
+
+  &:focus {
+    background-color: $black-3;
+    border: solid 0.2rem $white-6;
+  }
+}
+
+.button-add-edit-todo-dark {
+  border-style: solid;
+  border-color: $white-4;
+  border-width: 0.2rem;
+  border-radius: 0 1rem 1rem 0;
+
+  &:hover {
+    background-color: $black-4;
+  }
+
+  &:focus {
+    background-color: $black-3;
+    border-color: $white-1;
+  }
+}
+
+.button-delete-todo-dark {
+  padding: 0;
+
+  &:hover {
+    svg path {
+      fill: $white-5;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $white-6;
+    }
+  }
+}
+
+.button-start-edit-todo-dark {
+  padding: 0;
+
+  &:hover {
+    svg path {
+      fill: $white-5;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $white-6;
+    }
+  }
+}
+
+.button-add-edit-todo-light svg,
+.button-add-edit-todo-dark svg {
+  margin-top: 0.3rem;
+  min-width: 1.2rem !important;
+  min-height: 1.2rem !important;
+}
+
+.button-red-light {
+  border: solid 0.2rem $white-3;
+  background-color: $red-0;
+  color: $white-1;
+
+  &:hover {
+    background-color: $red-1;
+  }
+
+  &:focus {
+    background-color: $red-2;
+    border: solid 0.2rem $white-4;
+  }
+}
+
+.button-red-dark {
+  border: solid 0.2rem $white-3;
+  background-color: $red-0;
+
+  &:hover {
+    background-color: $red-1;
+  }
+
+  &:focus {
+    background-color: $red-2;
+    border: solid 0.2rem $white-4;
+  }
+}

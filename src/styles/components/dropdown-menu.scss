@@ -1,0 +1,88 @@
+@import '../globals';
+
+.dropdown-menu-container {
+  position: absolute;
+  font-size: 2rem;
+  border-radius: 1rem;
+  top: 4rem;
+  padding: 0.5rem;
+}
+
+.dropdown-menu-container ul li {
+  user-select: none;
+}
+
+.dropdown-menu-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropdown-menu-container ul li {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown-menu-container-light {
+  background-color: $white-2;
+}
+
+.dropdown-menu-container-light ul li {
+  transition: $transition;
+
+  &:hover {
+    background-color: $white-3;
+  }
+
+  &:active {
+    background-color: $white-4;
+  }
+}
+
+.item-selected-light {
+  background-color: $white-3;
+
+  &:hover {
+    background-color: $white-3 !important;
+  }
+
+  &:active {
+    background-color: $white-3 !important;
+  }
+}
+
+.dropdown-menu-container-dark {
+  background-color: $black-4;
+}
+
+.dropdown-menu-container-dark ul li {
+  transition: $transition;
+
+  &:hover {
+    background-color: $black-3;
+  }
+
+  &:active {
+    background-color: $black-2;
+  }
+}
+
+.item-selected-dark {
+  background-color: $black-5;
+
+  &:hover {
+    background-color: $black-5 !important;
+  }
+
+  &:active {
+    background-color: $black-5 !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .dropdown-menu-container {
+    right: 0.5rem;
+  }
+}

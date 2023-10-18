@@ -1,0 +1,124 @@
+@import '../globals';
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70rem;
+  gap: 1rem;
+}
+
+.title-todo-container {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.add-todo-container {
+  display: flex;
+  width: 100%;
+}
+
+.input-add-todo {
+  width: 100%;
+}
+
+.all-todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.all-todo-container:first-child .one-todo-container {
+  margin-top: 5rem;
+}
+
+.one-todo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  min-height: 6rem;
+  transition: $transition;
+}
+
+.one-todo-container *:last-child {
+  margin-left: 0.4rem;
+}
+
+.todo {
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.todo-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 2rem 0.4rem 2rem;
+  width: 100%;
+  user-select: none;
+}
+
+.checkbox-basic:checked {
+  & + .todo > .todo-description {
+    transition: $transition;
+    text-decoration: line-through;
+    opacity: 0.15;
+  }
+}
+
+.one-todo-container-light {
+  background-color: $white-2;
+}
+
+.one-todo-container-dark {
+  background-color: $black-4;
+}
+
+.one-todo-container:focus,
+.one-todo-container:active {
+  outline: solid 0.2rem $white-5;
+}
+
+.todo-overlay {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 1rem;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  height: 5rem;
+  transition: $transition;
+  outline: solid 0.2rem $white-5;
+  opacity: 0.6;
+}
+
+@keyframes dotsAnimation {
+  0%,
+  25% {
+    content: '·';
+  }
+  50% {
+    content: '· ·';
+  }
+  75%,
+  100% {
+    content: '· · ·';
+  }
+}
+
+.animation-dots {
+  margin-bottom: 0.4rem;
+  margin-left: 2.5rem !important;
+  font-size: 4rem;
+}
+
+.animation-dots::before {
+  content: '';
+  animation: dotsAnimation 2s steps(4) infinite;
+}

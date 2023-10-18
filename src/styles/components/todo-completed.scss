@@ -1,0 +1,28 @@
+@import '../globals';
+
+.todo-completed-container {
+  border-radius: 1rem;
+  background-color: $white-2;
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7rem;
+  transition: $transition;
+}
+
+.title-todo-completed {
+  font-weight: 500;
+  font-size: 1.9rem !important;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.todo-completed-container-dark {
+  background-color: $black-4;
+}
+
+.todo-completed-container-light {
+  background-color: $white-2;
+}

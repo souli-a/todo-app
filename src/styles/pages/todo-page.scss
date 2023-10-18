@@ -1,0 +1,39 @@
+@import '../globals';
+
+.full-page-size-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  transition: $transition;
+}
+
+.todo-page-container-light {
+  color: $black-4;
+  background-color: $white-1;
+}
+
+.todo-page-container-dark {
+  color: $white-2;
+  background-color: $black-5;
+}
+
+.todo-page-container-light svg path {
+  fill: $black-4;
+}
+
+.todo-page-container-dark svg path {
+  fill: $white-2;
+}
+
+@media (max-width: 340px) {
+  .todo-page-container {
+    padding: 1rem;
+  }
+}
